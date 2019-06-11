@@ -52,7 +52,7 @@ steps:
   inputs:
     apkFiles: 'app-release.apk'
     apksign: true # Optional
-    apksignerKeystoreFile: './android/my-release-key.keystore' # Required when apksign == True
+    apksignerKeystoreFile: 'SampleRNApp/android/my-release-key.keystore' # Required when apksign == True
     apksignerKeystorePassword: 123456 # Optional
     apksignerKeystoreAlias: $(KeystoreAlias) # Optional
     apksignerKeyPassword: $(KeyPassword) # Optional
