@@ -1,9 +1,4 @@
 # Node.js with React
-- task: AndroidSigning@3
-  inputs:
-    apkFiles: '**/*.apk'
-    apksignerKeystoreFile: 'SampleRNApp/android/my-release-key.keystore'
-    apksignerKeystorePassword: '123456'
 # Build a Node.js project that uses React.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -57,8 +52,8 @@ steps:
   inputs:
     apkFiles: 'app-release.apk'
     apksign: true # Optional
-    apksignerKeystoreFile: 'my-release-key.keystore' # Required when apksign == True
-    apksignerKeystorePassword: $(KeystorePassword) # Optional
+    apksignerKeystoreFile: 'SampleRNApp/android/my-release-key.keystore' # Required when apksign == True
+    apksignerKeystorePassword: 123456 # Optional
     apksignerKeystoreAlias: $(KeystoreAlias) # Optional
     apksignerKeyPassword: $(KeyPassword) # Optional
     #apksignerArguments: '--verbose' # Optional
